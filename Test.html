@@ -8,31 +8,21 @@
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+   body {
+            overflow-x: hidden;
+        }
+  </style>
  </head>
  <body class="bg-gray-100 text-gray-800">
   <header class="bg-purple-700 text-white py-4">
-   <div class="container mx-auto flex justify-between items-center">
-    <h1 class="text-3xl font-bold">
+   <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <h1 class="text-3xl font-bold mb-4 md:mb-0 flex items-center">
+     <i class="fas fa-graduation-cap mr-2">
+     </i>
      RIDDHI CLASSES
     </h1>
-    <div class="flex items-center space-x-4">
-     <div class="relative group">
-      <span class="cursor-pointer">
-       Contacts
-      </span>
-      <div class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-32 bg-black text-white text-center text-sm rounded py-1 opacity-0 group-hover:opacity-100 transition-opacity">
-       809707871
-      </div>
-     </div>
-     <div class="relative group">
-      <span class="cursor-pointer">
-       Address
-      </span>
-      <div class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-32 bg-black text-white text-center text-sm rounded py-1 opacity-0 group-hover:opacity-100 transition-opacity">
-       RIDDHI CLASSES
-      </div>
-     </div>
-    </div>
    </div>
   </header>
   <div class="container mx-auto flex justify-between items-center py-4">
@@ -73,11 +63,11 @@
       </li>
      </ul>
     </div>
-    <div class="fixed inset-0  bg-opacity-50 hidden" id="overlay">
+    <div class="fixed inset-0 bg-opacity-50 hidden" id="overlay">
     </div>
    </div>
-   <form class="flex items-center bg-white rounded-full overflow-hidden shadow-md">
-    <input class="px-4 py-2 bg-transparent outline-none" placeholder="Search Here" type="text"/>
+   <form class="flex items-center bg-white rounded-full overflow-hidden shadow-md w-full max-w-sm mx-auto">
+    <input class="px-4 py-2 bg-transparent outline-none flex-grow" placeholder="Search Here" type="text"/>
     <button class="px-4 py-2 text-gray-600" type="submit">
      <i class="fas fa-search">
      </i>
@@ -93,27 +83,82 @@
      New classes will start from next Monday. Please check the schedule for more details.
     </p>
    </div>
-   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <div class="bg-white p-4 rounded-lg shadow-md text-center">
-     <img alt="Science subject icon" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/DUWOKGQSlfQ3CirjHSjrISg3q0CeXbX4eOQ7ICiCutqAyMAoA.jpg" width="300"/>
-     <button class="bg-purple-700 text-white px-4 py-2 rounded" onclick="func()">
-      Science
-     </button>
+   <div class="mt-8">
+    <h2 class="text-2xl font-bold text-gray-600 text-center mb-4">
+     Our Toppers
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+     <div class="bg-white p-4 rounded-lg shadow-md text-center">
+      <img alt="Topper 1" class="mx-auto mb-4" height="200" src="F.jpeg" width="200"/>
+      <p class="font-bold text-warning bg-black">
+       Khushi
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-md text-center">
+      <img alt="Topper 2" class="mx-auto mb-4" height="200" src="S.jpeg" width="200"/>
+      <p class="font-bold text-warning bg-black">
+       Anushka
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-md text-center">
+      <img alt="Topper 3" class="mx-auto mb-4" height="200" src="T.jpeg" width="200"/>
+      <p class="font-bold text-white bg-black">
+       Prasad
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-md text-center">
+      <img alt="Topper 4" class="mx-auto mb-4" height="200" src="F4.jpeg" width="200"/>
+      <p class="font-bold text-white bg-black">
+       Mansi
+      </p>
+     </div>
     </div>
-    <div class="bg-white p-4 rounded-lg shadow-md text-center">
-     <img alt="History subject icon" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/ftQVCeraISrMSUzhP7xfXkZPdYnfSZCpAhgbUr4z0fF1HzAgC.jpg" width="300"/>
-     <button class="bg-purple-700 text-white px-4 py-2 rounded" onclick="func()">
-      History
-     </button>
-    </div>
-    <div class="bg-white p-4 rounded-lg shadow-md text-center">
-     <img alt="Geography subject icon" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/iUivSxTA0bIUIRKabfuSrVLDSSK1oJ2mq47OleKre214xMAoA.jpg" width="300"/>
-     <button class="bg-purple-700 text-white px-4 py-2 rounded" onclick="func()">
-      Geography
-     </button>
+   </div>
+   <div class="mt-8">
+    <h2 class="text-2xl font-bold text-center mb-4">
+     Subjects We Teach
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+     <div class="bg-white p-4 rounded-lg shadow-md text-center">
+      <img alt="Science subject icon" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/wTZN76MFPr4tEd9jGBgnMFdMxWy9H7bksemlJmi8b9q5nDAKA.jpg" width="300"/> 
+      <button class="bg-purple-700 text-white px-4 py-2 rounded" onclick="func()">
+       Science
+      </button>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-md text-center">
+      <img alt="History subject icon" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/ftQVCeraISrMSUzhP7xfXkZPdYnfSZCpAhgbUr4z0fF1HzAgC.jpg" width="300"/>
+      <button class="bg-purple-700 text-white px-4 py-2 rounded" onclick="func()">
+       History
+      </button>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-md text-center">
+      <img alt="Geography subject icon" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/nUtkYfrGGxTDZyKiQ8N4PQUK9iH69HlsEwwnP339iYP4nDAKA.jpg" width="300"/>
+      <button class="bg-purple-700 text-white px-4 py-2 rounded" onclick="func()">
+       Geography
+      </button>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-md text-center">
+      <img alt="Maths subject icon" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/dOq4sNHskV55GduLojkXleDUHY2pNyDc0HgCgTAJjFI5nDAKA.jpg" width="300"/>
+      <button class="bg-purple-700 text-white px-4 py-2 rounded" onclick="func()">
+       Maths
+      </button>
+     </div>
     </div>
    </div>
   </main>
+  <footer class="bg-purple-700 text-white py-4 mt-8">
+   <div class="container mx-auto text-center">
+    <h2 class="text-xl font-bold mb-2">
+     Contact Us
+    </h2>
+    <p>
+     Phone: 809707871
+    </p>
+    <p>
+     Address: Kukreja Phase 2, Bldg No 5, B Wing, Ground Floor, Vashinaka, Chembur, Mumbai 400074
+    </p>
+   </div>
+  </footer>
   <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden" id="popup">
    <div class="bg-white p-8 rounded shadow-lg text-center">
     <h3 class="text-2xl mb-4">
