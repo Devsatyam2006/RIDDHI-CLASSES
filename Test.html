@@ -1,0 +1,174 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   RIDDHI CLASSES
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100 text-gray-800">
+  <header class="bg-purple-700 text-white py-4">
+   <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-3xl font-bold">
+     RIDDHI CLASSES
+    </h1>
+    <div class="flex items-center space-x-4">
+     <div class="relative group">
+      <span class="cursor-pointer">
+       Contacts
+      </span>
+      <div class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-32 bg-black text-white text-center text-sm rounded py-1 opacity-0 group-hover:opacity-100 transition-opacity">
+       809707871
+      </div>
+     </div>
+     <div class="relative group">
+      <span class="cursor-pointer">
+       Address
+      </span>
+      <div class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-32 bg-black text-white text-center text-sm rounded py-1 opacity-0 group-hover:opacity-100 transition-opacity">
+       RIDDHI CLASSES
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container mx-auto flex justify-between items-center py-4">
+   <div class="flex items-center">
+    <i class="fas fa-bars text-2xl cursor-pointer" id="menu-icon">
+    </i>
+    <div class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-200" id="sidebar">
+     <i class="fas fa-times text-2xl cursor-pointer p-4" id="close-sidebar">
+     </i>
+     <ul class="mt-8">
+      <li class="p-4 hover:bg-gray-200">
+       <a class="flex items-center" href="Main.html">
+        <i class="fas fa-home mr-2">
+        </i>
+        Dashboard
+       </a>
+      </li>
+      <li class="p-4 hover:bg-gray-200">
+       <a class="flex items-center" href="#">
+        <i class="fas fa-info-circle mr-2">
+        </i>
+        About
+       </a>
+      </li>
+      <li class="p-4 hover:bg-gray-200">
+       <a class="flex items-center" href="#">
+        <i class="fas fa-user-graduate mr-2">
+        </i>
+        Student Info
+       </a>
+      </li>
+      <li class="p-4 hover:bg-gray-200">
+       <a class="flex items-center pop-trigger" href="../Login/Login.php">
+        <i class="fas fa-sign-in-alt mr-2">
+        </i>
+        Login
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="fixed inset-0  bg-opacity-50 hidden" id="overlay">
+    </div>
+   </div>
+   <form class="flex items-center bg-white rounded-full overflow-hidden shadow-md">
+    <input class="px-4 py-2 bg-transparent outline-none" placeholder="Search Here" type="text"/>
+    <button class="px-4 py-2 text-gray-600" type="submit">
+     <i class="fas fa-search">
+     </i>
+    </button>
+   </form>
+  </div>
+  <main class="container mx-auto py-8">
+   <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-8" role="alert">
+    <p class="font-bold">
+     Announcement
+    </p>
+    <p>
+     New classes will start from next Monday. Please check the schedule for more details.
+    </p>
+   </div>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-white p-4 rounded-lg shadow-md text-center">
+     <img alt="Science subject icon" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/DUWOKGQSlfQ3CirjHSjrISg3q0CeXbX4eOQ7ICiCutqAyMAoA.jpg" width="300"/>
+     <button class="bg-purple-700 text-white px-4 py-2 rounded" onclick="func()">
+      Science
+     </button>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow-md text-center">
+     <img alt="History subject icon" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/ftQVCeraISrMSUzhP7xfXkZPdYnfSZCpAhgbUr4z0fF1HzAgC.jpg" width="300"/>
+     <button class="bg-purple-700 text-white px-4 py-2 rounded" onclick="func()">
+      History
+     </button>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow-md text-center">
+     <img alt="Geography subject icon" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/iUivSxTA0bIUIRKabfuSrVLDSSK1oJ2mq47OleKre214xMAoA.jpg" width="300"/>
+     <button class="bg-purple-700 text-white px-4 py-2 rounded" onclick="func()">
+      Geography
+     </button>
+    </div>
+   </div>
+  </main>
+  <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden" id="popup">
+   <div class="bg-white p-8 rounded shadow-lg text-center">
+    <h3 class="text-2xl mb-4">
+     Login as
+    </h3>
+    <a class="block mb-4" href="../admin/admin-login.php">
+     <button class="bg-blue-600 text-white px-4 py-2 rounded">
+      Admin
+     </button>
+    </a>
+    <a class="block mb-4" href="../Login/Login.php">
+     <button class="bg-blue-600 text-white px-4 py-2 rounded">
+      Student
+     </button>
+    </a>
+    <button class="text-red-600 text-2xl" onclick="closePopup()">
+     <i class="fas fa-times-circle">
+     </i>
+    </button>
+   </div>
+  </div>
+  <script>
+   const sidebar = document.getElementById("sidebar");
+        const menuIcon = document.getElementById("menu-icon");
+        const closeSidebar = document.getElementById("close-sidebar");
+        const overlay = document.getElementById("overlay");
+        const popup = document.getElementById("popup");
+
+        menuIcon.addEventListener("click", () => {
+            sidebar.classList.toggle("-translate-x-full");
+            overlay.classList.toggle("hidden");
+        });
+
+        closeSidebar.addEventListener("click", () => {
+            sidebar.classList.add("-translate-x-full");
+            overlay.classList.add("hidden");
+        });
+
+        overlay.addEventListener("click", () => {
+            sidebar.classList.add("-translate-x-full");
+            overlay.classList.add("hidden");
+        });
+
+        document.querySelector('.pop-trigger').addEventListener("click", (event) => {
+            event.preventDefault();
+            popup.classList.remove("hidden");
+        });
+
+        function closePopup() {
+            popup.classList.add("hidden");
+        }
+
+        function func(){
+            alert("Please login to access :)");
+        }
+  </script>
+ </body>
+</html>
